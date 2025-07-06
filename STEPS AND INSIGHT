@@ -1,0 +1,249 @@
+## KMS SQL Case Study AnalysiS
+---
+
+### ✅ **CASE SCENARIO I**
+
+#### 1. **Which product category had the highest sales?**
+
+**Query:**
+
+```sql
+SELECT TOP 1 product_category, SUM(sales) AS Total_sales
+FROM megastore
+GROUP BY product_category
+ORDER BY Total_sales DESC;
+```
+
+**Answer:**
+
+* Product Category: **Technology**
+* Total Sales: **₦5,984,248.18**
+
+**Insights:** Technology is KMS's top-selling category by a wide margin. Marketing efforts, bundling strategies, and premium service offerings should continue to focus on this segment to maintain and grow revenue.
+
+---
+
+#### 2. **What are the Top 3 regions in terms of sales?**
+
+**Query:**
+
+```sql
+SELECT TOP 3 Region, SUM(sales) AS Total_sales
+FROM megastore
+GROUP BY Region
+ORDER BY Total_sales DESC;
+```
+
+**Answer:**
+
+1. West: ₦3,597,549.27
+2. Ontario: ₦3,063,212.48
+3. Prarie: ₦2,837,304.61
+
+**Insights:** These regions account for the majority of sales. Resource allocation, promotions, and logistics should prioritize these areas to maximize returns.
+
+---
+
+#### 3. **What are the Bottom 3 regions in terms of sales?**
+
+**Query:**
+
+```sql
+SELECT TOP 3 Region, SUM(sales) AS Total_sales
+FROM megastore
+GROUP BY Region
+ORDER BY Total_sales ASC;
+```
+
+**Answer:**
+
+1. Nunavut: ₦116,376.48
+2. Northwest Territories: ₦800,847.33
+3. Yukon: ₦975,867.38
+
+**Insights:** These regions may face challenges like low population, accessibility issues, or limited product relevance. Further research is needed to explore opportunities or exit strategies.
+
+---
+
+#### 4. **Total sales of appliances in Ontario**
+
+**Query:**
+
+```sql
+SELECT SUM(Sales) AS TotalSales
+FROM megastore
+WHERE Product_Sub_Category = 'appliances' AND Province = 'Ontario';
+```
+
+**Answer:**
+
+* Total Sales: ₦202,346.84
+
+**Insights:** Appliances underperform in Ontario. Campaigns offering discounts or appliance bundles could help boost sales.
+
+---
+
+#### 5. **KMS incurred the most shipping cost using which shipping method?**
+
+**Query:**
+
+```sql
+SELECT TOP 1 Ship_Mode, SUM(Shipping_Cost) AS TotalShipping
+FROM megastore
+GROUP BY Ship_Mode
+ORDER BY TotalShipping DESC;
+```
+
+**Answer:**
+
+* Shipping Mode: **Delivery Truck**
+* Cost: ₦51,971.94
+
+**Insights:** Delivery Truck is the most expensive. If it's being used for low-priority shipments, this may be inefficient. A re-evaluation of shipping policies is recommended.
+
+---
+
+### ✅ **CASE SCENARIO II**
+
+#### 6. **Who are the most valuable customers and what do they typically buy?**
+
+**Query:**
+
+```sql
+SELECT TOP 5 Customer_name, SUM(Sales) AS TotalSales
+FROM megastore
+GROUP BY Customer_Name
+ORDER BY TotalSales DESC;
+
+SELECT customer_name, product_category, SUM(sales) AS Totalsales
+FROM megastore
+WHERE Customer_name IN ('Emily Phan','Deborah Brumfield','Roy Skaria','Sylvia Foulston','Grant Carroll')
+GROUP BY customer_name, product_category
+ORDER BY customer_name, Totalsales;
+```
+
+**Answer:**
+
+* Top 5 Customers by Sales:
+
+  * Emily Phan: ₦117,124.44 (mostly Technology)
+  * Deborah Brumfield: ₦97,433.13 (Technology-heavy)
+  * Roy Skaria: ₦92,542.15 (balanced)
+  * Sylvia Foulston: ₦88,875.76 (balanced)
+  * Grant Carroll: ₦88,417.00 (mostly Office Supplies)
+
+**Insights:** Top customers have distinct category preferences. Targeted promotions based on individual buying patterns (e.g., tech loyalty perks for Emily) could strengthen relationships.
+
+---
+
+#### 7. **Which small business customer had the highest sales?**
+
+**Query:**
+
+```sql
+SELECT TOP 1 Customer_Name, SUM(Sales) AS TotalSales
+FROM megastore
+WHERE Customer_Segment = 'Small Business'
+GROUP BY Customer_Name
+ORDER BY TotalSales DESC;
+```
+
+**Answer:**
+
+* Customer: **Dennis Kane**
+* Total Sales: ₦75,967.59
+
+**Insights:** Dennis Kane is a high-value small business client. Offer account support or exclusive business deals to increase loyalty.
+
+---
+
+#### 8. **Which Corporate Customer placed the most number of orders (2009 – 2012)?**
+
+**Query:**
+
+```sql
+SELECT TOP 1 Customer_Name, COUNT(Order_ID) AS OrderCount
+FROM megastore
+WHERE Customer_Segment = 'Corporate' AND YEAR(CAST(Order_Date AS DATE)) BETWEEN 2009 AND 2012
+GROUP BY Customer_Name
+ORDER BY OrderCount DESC;
+```
+
+**Answer:**
+
+* Customer: **Adam Hart**
+* Order Count: **27**
+
+**Insights:** Adam Hart was the most active corporate buyer in that time range. Could be approached for bulk repeat orders.
+
+---
+
+#### 9. **Which consumer customer was the most profitable?**
+
+**Query:**
+
+```sql
+SELECT TOP 1 Customer_Name, SUM(Profit) AS TotalProfit
+FROM megastore
+WHERE Customer_Segment = 'Consumer'
+GROUP BY Customer_Name
+ORDER BY TotalProfit DESC;
+```
+
+**Answer:**
+
+* Customer: **Emily Phan**
+* Total Profit: ₦34,005.44
+
+**Insights:** Emily not only tops in sales but also in profit. She is a high-LTV customer and should be considered for retention efforts.
+
+---
+
+#### 10. **Which customers returned items, and what segment do they belong to?**
+
+**Query:**
+
+```sql
+SELECT m.Customer_Name, COUNT(*) AS ReturnCount
+FROM megastore AS m
+INNER JOIN Order_Status AS os ON m.Order_ID = os.Order_ID
+WHERE os.Status = 'Returned'
+GROUP BY m.Customer_Name
+ORDER BY ReturnCount DESC;
+```
+
+**Answer:**
+
+* Top: Darren Budd (12 returns), Erin Creighton (10), Brad Thomas & others (8 each)
+
+**Insights:** Track segments of frequent returners and investigate reasons. Return frequency might signal dissatisfaction or fraud risk.
+
+---
+
+#### 11. **Shipping Cost vs Order Priority Analysis**
+
+**Query:**
+
+```sql
+SELECT Ship_Mode, Order_Priority, SUM(Shipping_Cost) AS TotalShipping
+FROM megastore
+GROUP BY Ship_Mode, Order_Priority
+ORDER BY Order_Priority, TotalShipping DESC;
+```
+
+**Answer (Excerpt):**
+
+* Critical Priority mostly used **Delivery Truck** (₦10,783.82) and **Regular Air** (₦8,586.76)
+* Express Air (fastest & most expensive) used less (₦1,742.10 for Critical)
+
+**Insights:** KMS seems to manage shipping cost smartly. Express Air is limited to actual high-priority orders. Continued monitoring can help reduce logistics overspending.
+
+
+
+Final Recommendation
+
+* Focus on high-performing categories and regions.
+* Reduce inefficiencies in shipping.
+* Invest in top customers and analyze return behavior for risks.
+* Use personalized marketing and bundled offers.
+
