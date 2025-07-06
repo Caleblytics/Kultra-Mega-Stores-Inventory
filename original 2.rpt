@@ -1,0 +1,509 @@
+﻿product_category                                   Total_sales
+-------------------------------------------------- ----------------------
+Technology                                         5984248.17547321
+
+(1 row affected)
+
+Region                                             Total_sales
+-------------------------------------------------- ----------------------
+West                                               3597549.269871
+Ontario                                            3063212.47638369
+Prarie                                             2837304.60503292
+
+(3 rows affected)
+
+Region                                             Total_sales
+-------------------------------------------------- ----------------------
+Nunavut                                            116376.48383522
+Northwest Territories                              800847.330903053
+Yukon                                              975867.375723362
+
+(3 rows affected)
+
+TotalSales
+----------------------
+202346.839630127
+
+(1 row affected)
+
+Customer_Name                                      TotalSales
+-------------------------------------------------- ----------------------
+Jeremy Farry                                       85.7200021743774
+Natalie DeCherney                                  125.900001525879
+Nicole Fjeld                                       153.030006408691
+Katrina Edelman                                    180.760005950928
+Dorothy Dickinson                                  198.080001831055
+Christine Kargatis                                 293.2200050354
+Eric Murdock                                       343.32799911499
+Chris McAfee                                       350.180004119873
+Rick Huthwaite                                     415.819980621338
+Mark Hamilton                                      450.990005493164
+
+(10 rows affected)
+
+Ship_Mode                                          TotalShipping
+-------------------------------------------------- ----------------------
+Delivery Truck                                     51971.9397373199
+
+(1 row affected)
+
+Customer_name                                      TotalSales
+-------------------------------------------------- ----------------------
+Emily Phan                                         117124.435264587
+Deborah Brumfield                                  97433.1346206665
+Roy Skaria                                         92542.1531906128
+Sylvia Foulston                                    88875.7581214905
+Grant Carroll                                      88417.0006103516
+
+(5 rows affected)
+
+customer_name                                      product_category                                   Totalsales
+-------------------------------------------------- -------------------------------------------------- ----------------------
+Deborah Brumfield                                  Office Supplies                                    7827.7200088501
+Deborah Brumfield                                  Furniture                                          12809.6198730469
+Deborah Brumfield                                  Technology                                         76795.7947387695
+Emily Phan                                         Office Supplies                                    2630.81999969482
+Emily Phan                                         Furniture                                          4011.64990234375
+Emily Phan                                         Technology                                         110481.965362549
+Grant Carroll                                      Technology                                         7752.88241577148
+Grant Carroll                                      Furniture                                          29826.8493652344
+Grant Carroll                                      Office Supplies                                    50837.2688293457
+Roy Skaria                                         Office Supplies                                    12015.5199508667
+Roy Skaria                                         Technology                                         30349.3932495117
+Roy Skaria                                         Furniture                                          50177.2399902344
+Sylvia Foulston                                    Office Supplies                                    11033.3400611877
+Sylvia Foulston                                    Technology                                         29669.0381469727
+Sylvia Foulston                                    Furniture                                          48173.3799133301
+
+(15 rows affected)
+
+Customer_Name                                      TotalSales
+-------------------------------------------------- ----------------------
+Dennis Kane                                        75967.5932159424
+
+(1 row affected)
+
+Customer_Name                                      OrderCount
+-------------------------------------------------- -----------
+Adam Hart                                          27
+
+(1 row affected)
+
+Customer_Name                                      TotalProfit
+-------------------------------------------------- ----------------------
+Emily Phan                                         34005.4392166138
+Warning: Null value is eliminated by an aggregate or other SET operation.
+
+(1 row affected)
+
+Customer_Name                                      ReturnCount
+-------------------------------------------------- -----------
+Darren Budd                                        12
+Erin Creighton                                     10
+Brad Thomas                                        8
+Grant Carroll                                      8
+Olvera Toch                                        8
+Erica Smith                                        7
+Helen Wasserman                                    7
+Peter Fuller                                       7
+Toby Swindell                                      6
+Aleksandra Gannaway                                6
+Amy Cox                                            6
+Barry Blumstein                                    6
+Fred Harton                                        6
+Dianna Vittorini                                   6
+Charles Sheldon                                    6
+Christy Brittain                                   5
+Cindy Chapman                                      5
+Dave Poirier                                       5
+Dave Hallsten                                      5
+Denise Monton                                      5
+Brooke Gillingham                                  5
+Carlos Soltero                                     5
+Janet Lee                                          5
+Jonathan Doherty                                   5
+Nora Paige                                         5
+Michelle Huthwaite                                 5
+Luke Schmidt                                       5
+Tim Brockman                                       5
+Todd Boyes                                         4
+Tony Sayre                                         4
+Tracy Collins                                      4
+Randy Ferguson                                     4
+Scott Cohen                                        4
+Sean Miller                                        4
+Steve Chapman                                      4
+Matt Collister                                     4
+Lycoris Saunders                                   4
+Kimberly Carter                                    4
+Lela Donovan                                       4
+Michael Oakman                                     4
+Michelle Ellison                                   4
+Monica Federle                                     4
+John Lee                                           4
+John Lucas                                         4
+Jay Fine                                           4
+Jim Kriz                                           4
+Karen Seio                                         4
+Katherine Nockton                                  4
+James Galang                                       4
+James Lanier                                       4
+Harold Pawlan                                      4
+Bruce Stewart                                      4
+Bryan Spruell                                      4
+Brian Stugart                                      4
+Bill Eplett                                        4
+Bill Overfelt                                      4
+Bobby Odegard                                      4
+Aaron Hawkins                                      4
+Adrian Barton                                      4
+Alan Hwang                                         4
+Dennis Pardue                                      4
+Dorothy Badders                                    4
+Duane Huffman                                      4
+Ed Braxton                                         4
+Frank Hawley                                       4
+Edward Nazzal                                      4
+Erica Hernandez                                    4
+Cynthia Arntzen                                    4
+Clytie Kelty                                       4
+Chad Sievert                                       4
+Christine Abelman                                  3
+Corey Catlett                                      3
+Evan Henry                                         3
+Doug Bickford                                      3
+Denny Ordway                                       3
+Alejandro Grove                                    3
+Alex Russell                                       3
+Amy Hunt                                           3
+Becky Castell                                      3
+Arthur Prichep                                     3
+Aaron Bergman                                      3
+Bill Donatelli                                     3
+Carol Darley                                       3
+Cari MacIntyre                                     3
+Cari Sayre                                         3
+Helen Andreada                                     3
+Greg Guthrie                                       3
+Guy Thornton                                       3
+Giulietta Dortch                                   3
+Gary Hwang                                         3
+Harold Dahlen                                      3
+Hunter Glantz                                      3
+Jas O'Carroll                                      3
+Karl Brown                                         3
+Julie Prescott                                     3
+Justin Ellison                                     3
+John Murray                                        3
+Joni Wasserman                                     3
+Mike Caudle                                        3
+Laurel Elliston                                    3
+Nora Pelletier                                     3
+Odella Nelson                                      3
+Patrick Jones                                      3
+Natalie Webber                                     3
+Liz MacKendrick                                    3
+Liz Price                                          3
+Kristen Hastings                                   3
+Ken Lonsdale                                       3
+Larry Tron                                         3
+Maria Zettner                                      3
+Maxwell Schwartz                                   3
+Susan MacKendrick                                  3
+Steven Cartwright                                  3
+Tamara Willingham                                  3
+Thais Sissman                                      3
+Sean O'Donnell                                     3
+Shahid Hopkins                                     3
+Richard Eichhorn                                   3
+Roy Phan                                           3
+Victoria Pisteka                                   3
+Vivek Grady                                        3
+Tom Zandusky                                       3
+Toby Knight                                        2
+Xylona Price                                       2
+Valerie Takahito                                   2
+Victor Price                                       2
+Trudy Bell                                         2
+Trudy Brown                                        2
+Tony Molinari                                      2
+Roy Skaria                                         2
+Ryan Crowe                                         2
+Sally Matthias                                     2
+Sam Zeldin                                         2
+Sanjit Chand                                       2
+Rick Wilson                                        2
+Ritsa Hightower                                    2
+Rob Lucas                                          2
+Rob Williams                                       2
+Robert Waldorf                                     2
+Ralph Kennedy                                      2
+Peter McVee                                        2
+Philip Fox                                         2
+Phillina Ober                                      2
+Pauline Chand                                      2
+Quincy Jones                                       2
+Shaun Chance                                       2
+Sheri Gordon                                       2
+Shirley Daniels                                    2
+Sonia Cooley                                       2
+Sean Braxton                                       2
+Sarah Brown                                        2
+Theresa Swint                                      2
+Sung Pak                                           2
+Tamara Manning                                     2
+Steven Roelle                                      2
+Susan Vittorini                                    2
+Matt Connell                                       2
+Maureen Gastineau                                  2
+Max Jones                                          2
+Magdelene Morse                                    2
+Marc Crier                                         2
+Marc Harrigan                                      2
+Jim Epp                                            2
+Larry Hughes                                       2
+Liz Willingham                                     2
+Liz Pelletier                                      2
+Lena Radford                                       2
+Linda Cazamias                                     2
+Nathan Gelder                                      2
+Nathan Mautz                                       2
+Mitch Willingham                                   2
+Naresj Patel                                       2
+Nick Crebassa                                      2
+Patrick O'Donnell                                  2
+Parhena Norris                                     2
+Patrick Bzostek                                    2
+Mick Crebagga                                      2
+Michelle Lonsdale                                  2
+Michael Dominguez                                  2
+Michael Granlund                                   2
+Muhammed Lee                                       2
+Jay Kimmel                                         2
+Joel Jenkins                                       2
+John Castell                                       2
+Joe Elijah                                         2
+Julia Barnett                                      2
+Julia Dunbar                                       2
+Julia West                                         2
+Kean Nguyen                                        2
+Kean Takahito                                      2
+Keith Dawkins                                      2
+Jason Klamczynski                                  2
+Jeremy Pistek                                      2
+Jessica Myrick                                     2
+Ionia McGrath                                      2
+Jack O'Briant                                      2
+Jane Waco                                          2
+George Bell                                        2
+Hallie Redmond                                     2
+Henry Goldwyn                                      2
+Herbert Flentye                                    2
+Carlos Daly                                        2
+Carol Triggs                                       2
+Brenda Bowman                                      2
+Beth Thompson                                      2
+Brendan Sweed                                      2
+Brian Dahlen                                       2
+Brian DeCherney                                    2
+Bill Shonely                                       2
+Ben Wallace                                        2
+Arthur Wiediger                                    2
+Ashley Jarboe                                      2
+Anthony O'Donnell                                  2
+Art Ferguson                                       2
+Barry Gonzalez                                     2
+Dianna Arnett                                      2
+Dennis Bolton                                      2
+Craig Yedwab                                       2
+Don Weiss                                          2
+Duane Benoit                                       2
+Edward Hooks                                       2
+Duane Noonan                                       2
+Emily Grady                                        2
+Erin Mull                                          2
+Eugene Moren                                       2
+Eva Jacobs                                         2
+Corinna Mitchell                                   2
+Craig Leslie                                       2
+Charlotte Melton                                   2
+Cathy Prescott                                     2
+Charles McCrossin                                  2
+Dan Lawera                                         2
+Deanra Eno                                         2
+David Kendrick                                     2
+David Philippe                                     1
+Dean Braden                                        1
+Dean Percer                                        1
+Delfina Latchford                                  1
+Denise Leinenbach                                  1
+Dave Kipp                                          1
+Dan Reichenbach                                    1
+Daniel Lacy                                        1
+Daniel Raglin                                      1
+Cyra Reiten                                        1
+Damala Kotsonis                                    1
+Darren Powers                                      1
+Darrin Sayre                                       1
+Charles Crestani                                   1
+Christina DeMoss                                   1
+Christine Kargatis                                 1
+Craig Molinari                                     1
+Cindy Stewart                                      1
+Craig Carroll                                      1
+Eudokia Martin                                     1
+Eleni McCrary                                      1
+Ellis Ballard                                      1
+Evan Minnotte                                      1
+Frank Atkinson                                     1
+Frank Gastineau                                    1
+Frank Merwin                                       1
+Fred Chung                                         1
+Fred Hopkins                                       1
+Dorris Love                                        1
+Dionis Lloyd                                       1
+Adam Bellavance                                    1
+Becky Martin                                       1
+Becky Pak                                          1
+Ben Ferrer                                         1
+Art Foster                                         1
+Art Miller                                         1
+Astrea Jones                                       1
+Barbara Fisher                                     1
+Anna Chung                                         1
+Anna Gayman                                        1
+Anna Haberlin                                      1
+Anne Pryor                                         1
+Annie Thurman                                      1
+Anthony Garverick                                  1
+Alice McCarthy                                     1
+Alyssa Tate                                        1
+Alejandro Savely                                   1
+Benjamin Patterson                                 1
+Benjamin Venier                                    1
+Berenike Kampe                                     1
+Bobby Elias                                        1
+Brian Moss                                         1
+Bobby Trafton                                      1
+Brad Eason                                         1
+Brendan Dodson                                     1
+Candace McMahon                                    1
+Bryan Mills                                        1
+Cassandra Brandow                                  1
+Carlos Meador                                      1
+Carl Weiss                                         1
+Greg Tran                                          1
+Guy Armstrong                                      1
+George Zrebassa                                    1
+Gary McGarr                                        1
+Grant Thornton                                     1
+Ivan Gibson                                        1
+Jack Garza                                         1
+Jesus Ocampo                                       1
+Jill Matthias                                      1
+Janet Martin                                       1
+Kelly Williams                                     1
+Ken Black                                          1
+Ken Dana                                           1
+Katharine Harms                                    1
+Katherine Hughes                                   1
+Joel Eaton                                         1
+Kalyca Meade                                       1
+Karen Bern                                         1
+John Dryer                                         1
+John Grady                                         1
+Jennifer Halladay                                  1
+Jim Sink                                           1
+Joseph Airdo                                       1
+Joy Smith                                          1
+John Stevenson                                     1
+Muhammed Yedwab                                    1
+Nancy Lomonaco                                     1
+Mike Gockenbach                                    1
+Mike Pelletier                                     1
+Mitch Gastineau                                    1
+Michelle Tran                                      1
+Patrick Ryan                                       1
+Paul MacIntyre                                     1
+Noel Staavos                                       1
+Neil French                                        1
+Neil Knudson                                       1
+Neoma Murray                                       1
+Lisa DeCherney                                     1
+Liz Carlisle                                       1
+Laurel Beltran                                     1
+Khloe Miller                                       1
+Kristina Nunn                                      1
+Maria Bertelson                                    1
+Mark Cousins                                       1
+Mark Packer                                        1
+Mary Zewe                                          1
+Maya Herman                                        1
+Meg O'Connel                                       1
+Luke Weiss                                         1
+Tamara Dahlen                                      1
+Steve Nguyen                                       1
+Stuart Calhoun                                     1
+Sue Ann Reed                                       1
+Ted Trevino                                        1
+Thomas Boland                                      1
+Thea Hudgings                                      1
+Sarah Foster                                       1
+Sarah Jordon                                       1
+Scot Wooten                                        1
+Sean Wendt                                         1
+Sonia Sunley                                       1
+Speros Goranitis                                   1
+Stephanie Phelps                                   1
+Stephanie Ulpright                                 1
+Sibella Parks                                      1
+Rachel Payne                                       1
+Pete Armstrong                                     1
+Pete Kriz                                          1
+Phillip Breyer                                     1
+Randy Bradley                                      1
+Rick Bensley                                       1
+Rick Reed                                          1
+Raymond Book                                       1
+Resi Polking                                       1
+Ricardo Block                                      1
+Roger Demir                                        1
+Roland Black                                       1
+Roland Fjeld                                       1
+Roy French                                         1
+Sanjit Jacobs                                      1
+Saphhira Shifley                                   1
+Sandra Glassco                                     1
+Sally Hughsby                                      1
+Ruben Dartt                                        1
+Valerie Dominguez                                  1
+Troy Blackwell                                     1
+Tonja Turnell                                      1
+Tony Chapman                                       1
+Tom Prescott                                       1
+Tom Stivers                                        1
+
+(384 rows affected)
+
+Ship_Mode                                          Order_Priority                                     TotalShipping
+-------------------------------------------------- -------------------------------------------------- ----------------------
+Delivery Truck                                     Critical                                           10783.8199481964
+Regular Air                                        Critical                                           8586.75996172428
+Express Air                                        Critical                                           1742.09998804331
+Delivery Truck                                     High                                               11206.8799371719
+Regular Air                                        High                                               10005.0099598169
+Express Air                                        High                                               1453.5299910903
+Delivery Truck                                     Low                                                11131.6099338531
+Regular Air                                        Low                                                10263.619956553
+Express Air                                        Low                                                1551.62999778986
+Delivery Truck                                     Medium                                             9461.61997509003
+Regular Air                                        Medium                                             9418.71996569633
+Express Air                                        Medium                                             1633.58999282122
+Regular Air                                        Not Specified                                      9734.07996362448
+Delivery Truck                                     Not Specified                                      9388.00994300842
+Express Air                                        Not Specified                                      1470.05999219418
+
+(15 rows affected)
+
+
+Completion time: 2025-07-06T08:28:44.3638819+01:00
